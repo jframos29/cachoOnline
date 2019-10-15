@@ -18,7 +18,7 @@ const Home = (props) => {
 				<h1>Bienvenido a Cacho</h1>
 			</div>
 			<div className="d-flex justify-content-center" >
-				<h4>Entra e inicia la diversión!</h4>
+				<h2>Entra e inicia la diversión!</h2>
 			</div>
 			<div className="d-flex justify-content-center" >
 				<p>1.Inicia sesión o regístrate</p>
