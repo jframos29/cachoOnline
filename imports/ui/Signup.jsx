@@ -45,17 +45,17 @@ class Login extends Component {
     if(this.state.error){
       return (
         <div>
-          <div>
+          <div className="text-danger comenzar">
             Error al crear usuario
           </div>
-          <div className="d-flex justify-content-center">
+          <div>
           <form>
           Usuario: <input className="form-control" onChange={this.onChangeUser.bind(this)} type="text" />
           Nombre: <input className="form-control" onChange={this.onChangeId.bind(this)} type="text" />
           Contraseña:<input className="form-control" onChange={this.onChangePass.bind(this)} type="password" />
           Repetir Contraseña: <input className="form-control" onChange={this.onChangeRPass.bind(this)} type="password" />
           </form>
-          <button className="btn"className="btn btn-dark" onClick={this.logIn.bind(this)}>Regístrate</button>
+          <button className="btn btn-dark comenzar" onClick={this.logIn.bind(this)}>Regístrate</button>
           </div>
         </div>
       );
@@ -69,7 +69,7 @@ class Login extends Component {
           Contraseña:<input className="form-control" onChange={this.onChangePass.bind(this)} type="password" />
           Repetir Contraseña: <input className="form-control" onChange={this.onChangeRPass.bind(this)} type="password" />
         </form>
-        <button className="btn"className="btn btn-dark" onClick={this.logIn.bind(this)}>Regístrate</button>
+        <button className="btn btn-dark comenzar" onClick={this.logIn.bind(this)}>Regístrate</button>
       </div>
     );
     }

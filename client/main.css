@@ -76,6 +76,7 @@ form {
 }
 .dudar, .comenzar {
   margin-left: 1rem;
+  margin-top: 1rem;
   margin-bottom: 1rem;
 }
 .col h2 {
@@ -87,3 +88,16 @@ form {
 h6 {
   font-size: 1.3rem;
 }
+#temp {
+  text-align: left;
+  margin-left: 2rem;
+}
+/* #containerSignedIn {
+  width: 35%;
+  display: inline-block;
+}
+
+#infoJuego {
+  width: 55%;
+  display: inline-block;
+} */

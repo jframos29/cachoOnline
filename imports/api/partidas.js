@@ -62,8 +62,10 @@ Meteor.methods({
 			ultimaJugada: "",
 			ultimoJugadorSacado:"",
 			turnoUltimoJugador:-1
-		});
-		let res2 = Meteor.users.findOne({ _id: this.userId });
+    });
+	console.log(this.userId);
+	let res2 = Meteor.users.findOne({ _id: this.userId });
+	console.log(res2);
 		res2.profile.juegosHistoricos.push(a);
 		res2.profile.juegoActivo = a;
 		Meteor.users.update({ _id: this.userId }, res2);

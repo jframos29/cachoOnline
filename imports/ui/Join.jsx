@@ -33,7 +33,7 @@ class Login extends Component {
           <form>
             Id del juego: <input className="form-control" onChange={this.onChangeIdGame.bind(this)} type="text" />
           </form>
-          <button className="btn btn-dark" onClick={this.joinGame.bind(this)}>Unirte a juego</button>
+          <button className="btn btn-dark comenzar" onClick={this.joinGame.bind(this)}>Unirte a juego</button>
         </div>
       );
     }
@@ -43,7 +43,7 @@ class Login extends Component {
           <form>
             Id del juego: <input className="form-control" onChange={this.onChangeIdGame.bind(this)} type="text" />
           </form>
-          <button className="btn btn-dark" onClick={this.joinGame.bind(this)}>Unirte a juego</button>
+          <button className="btn btn-dark comenzar" onClick={this.joinGame.bind(this)}>Unirte a juego</button>
         </div>
       );
     }
