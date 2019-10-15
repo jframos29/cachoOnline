@@ -1,5 +1,6 @@
 import { Meteor } from 'meteor/meteor';
 import { Accounts } from "meteor/accounts-base";
+import { WebApp } from "meteor/webapp";
 import '../imports/api/partidas.js';
 import '../imports/api/board.js';
 
@@ -21,4 +22,6 @@ Meteor.methods({
 });
 
 Meteor.startup(() => {
+  WebApp.addHtmlAttributeHook(() => ({ lang: "es" }));
+});
 });
