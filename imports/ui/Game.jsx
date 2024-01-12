@@ -68,6 +68,10 @@ const Game = (props) => {
 		let ultimaPinta = ultima.split(" ")[1];
 		let valorPinta = 0;
 		let valorUltimaPinta = 0;
+		
+		const valoresPinta = {as:1, pato:2,tren:3,quina:5,cena:6};
+		valorPinta = valoresPinta[pinta]
+		valorUltimaPinta = valoresPinta[ultimaPinta]
 
 		if (pinta === "as") {
 			valorPinta = 1;
@@ -87,6 +91,8 @@ const Game = (props) => {
 		else if (pinta === "cena") {
 			valorPinta = 6;
 		}
+		
+		
 
 		if (ultimaPinta === "as") {
 			valorUltimaPinta = 1;
@@ -123,9 +129,9 @@ const Game = (props) => {
 		}
 	};
 
-	const onChangeCantidad = (e) => {
+	const onChangeCantidad = React.useCallback((e) => {
 		setNumDadosApuesta(parseInt(e.target.value));
-	};
+	}, []);
 
 	const onChangePinta = (e) => {
 		setPinta(e.target.value);
